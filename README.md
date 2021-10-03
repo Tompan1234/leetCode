@@ -1,8 +1,8 @@
 # leetCode
 力扣刷题
 
-##master分支
+## master分支
 这个是主要刷题的分支，文件名有些是中文，别介意，之后就换成驼峰英文
 
-##geek_work
+## geek_work
 这个是极客作业，请在这里查看
