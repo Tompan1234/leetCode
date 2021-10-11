@@ -1,4 +1,4 @@
-package leetcode.editor.cn;
+package leetcode.editor.cn.work01;
 
 import lombok.Builder;
 import lombok.Data;
