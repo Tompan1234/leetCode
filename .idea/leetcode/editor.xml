@@ -30,39 +30,39 @@
             </LeetcodeEditor>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/DesignCircularDeque.java">
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/GroupAnagrams.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/DesignCircularDeque.md" />
-              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/DesignCircularDeque.java" />
-              <option name="questionId" value="859" />
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/GroupAnagrams.md" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/GroupAnagrams.java" />
+              <option name="questionId" value="49" />
             </LeetcodeEditor>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/MaximalRectangle.java">
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/MinStack.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/MaximalRectangle.md" />
-              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/MaximalRectangle.java" />
-              <option name="questionId" value="85" />
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/MinStack.md" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/MinStack.java" />
+              <option name="questionId" value="155" />
             </LeetcodeEditor>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/MergeTwoSortedLists.java">
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/ReverseLinkedList.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/MergeTwoSortedLists.md" />
-              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/MergeTwoSortedLists.java" />
-              <option name="questionId" value="21" />
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/ReverseLinkedList.md" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/ReverseLinkedList.java" />
+              <option name="questionId" value="206" />
             </LeetcodeEditor>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/PlusOne.java">
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/ReverseNodesInKGroup.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/PlusOne.md" />
-              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/PlusOne.java" />
-              <option name="questionId" value="66" />
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/ReverseNodesInKGroup.md" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/ReverseNodesInKGroup.java" />
+              <option name="questionId" value="25" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -150,8 +150,8 @@
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[206]反转链表.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/[206]反转链表.md" />
-              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[206]反转链表.java" />
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/ReverseLinkedList.md" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/ReverseLinkedList.java" />
               <option name="questionId" value="206" />
             </LeetcodeEditor>
           </value>
