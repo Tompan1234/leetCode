@@ -30,6 +30,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/DegreeOfAnArray.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/DegreeOfAnArray.md" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/DegreeOfAnArray.java" />
+              <option name="questionId" value="697" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/GroupAnagrams.java">
           <value>
             <LeetcodeEditor>
@@ -63,6 +72,24 @@
               <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/ReverseNodesInKGroup.md" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/ReverseNodesInKGroup.java" />
               <option name="questionId" value="25" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/SubarraySumEqualsK.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/SubarraySumEqualsK.md" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/SubarraySumEqualsK.java" />
+              <option name="questionId" value="560" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/SubdomainVisitCount.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/SubdomainVisitCount.md" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/SubdomainVisitCount.java" />
+              <option name="questionId" value="829" />
             </LeetcodeEditor>
           </value>
         </entry>
