@@ -1,8 +1,23 @@
 package leetcode.editor.cn;
 
 public class ReverseLinkedList{
-    public static void main(String[] args) {
-           Solution solution = new ReverseLinkedList().new Solution();
+    public static void main(String[] args) {;
+        Solution solution = new ReverseLinkedList().new Solution();
+        solution.reverseList(ListNode.builder()
+                        .val(1)
+                        .next(ListNode.builder()
+                                .val(2)
+                                .next(ListNode.builder()
+                                        .val(3)
+                                        .next(ListNode.builder()
+                                                .val(4)
+                                                .next(ListNode.builder()
+                                                        .val(5)
+                                                        .build())
+                                                .build())
+                                        .build())
+                                .build())
+                .build());
       }
 //leetcode submit region begin(Prohibit modification and deletion)
 /**
@@ -18,15 +33,14 @@ public class ReverseLinkedList{
 class Solution {
     public ListNode reverseList(ListNode head) {
 
-        ListNode last = null;
-
-        while (head != null){
-            ListNode next = head.next;
-            head.next = last;
-            last = head;
-            head = next;
+        if(head == null || head.next==null){
+            return head;
         }
-        return last;
+
+        ListNode listNode = reverseList(head.next);
+        head.next.next = head;
+        head.next = null;
+        return listNode;
 
     }
 }
