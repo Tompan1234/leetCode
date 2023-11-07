@@ -7,6 +7,7 @@ import java.util.Arrays;
 public class MaximumSubarray{
     public static void main(String[] args) {
             int[] nums = {-1};
+
            Solution solution = new MaximumSubarray().new Solution();
         System.out.println(solution.maxSubArray(nums));
       }
