@@ -1,0 +1,113 @@
+# 解法一
+
+## 思路和算法
+
+根据字母异位词的定义，两个互为字母异位词的字符串包含的字符完全相同，只有顺序可能不同，因此将两个互为字母异位词的字符串排序之后，得到的有序字符串相同。
+
+可以将字符串排序之后的有序字符串作为同一组字母异位词的标志，使用哈希表存储每个标志对应的所有字符串，则哈希表中的每个键值对表示一组字母异位词，其中关键字表示该组字母异位词的标志，值表示属于该组字母异位词的所有字符串组成的列表。
+
+遍历字符串数组，对于每个字符串，得到其所在的一组字母异位词的标志，将该字符串添加到该组中。遍历结束之后，返回哈希表的所有键值对中的值组成的列表。
+
+## 代码
+
+* [sol1-Java]
+
+```Java
+class Solution {
+    public List<List<String>> groupAnagrams(String[] strs) {
+        Map<String, List<String>> map = new HashMap<String, List<String>>();
+        for (String str : strs) {
+            char[] array = str.toCharArray();
+            Arrays.sort(array);
+            String key = new String(array);
+            map.putIfAbsent(key, new ArrayList<String>());
+            map.get(key).add(str);
+        }
+        return new ArrayList<List<String>>(map.values());
+    }
+}
+```
+
+* [sol1-C#]
+
+```C#
+public class Solution {
+    public IList<IList<string>> GroupAnagrams(string[] strs) {
+        IDictionary<string, IList<string>> dictionary = new Dictionary<string, IList<string>>();
+        foreach (string str in strs) {
+            char[] array = str.ToCharArray();
+            Array.Sort(array);
+            string key = new string(array);
+            dictionary.TryAdd(key, new List<string>());
+            dictionary[key].Add(str);
+        }
+        return new List<IList<string>>(dictionary.Values);
+    }
+}
+```
+
+## 复杂度分析
+
+- 时间复杂度：$O(nk \log k)$，其中 $n$ 是数组 $\textit{strs}$ 的长度，$k$ 是数组 $\textit{strs}$ 中的字符串的最大长度。需要遍历 $n$ 个字符串，每个字符串的排序和更新哈希表共需要 $O(k \log k)$ 的时间，总时间复杂度是 $O(nk \log k)$。
+
+- 空间复杂度：$O(nk)$，其中 $n$ 是数组 $\textit{strs}$ 的长度，$k$ 是数组 $\textit{strs}$ 中的字符串的最大长度。哈希表需要存储数组 $\textit{strs}$ 中的全部字符串，需要 $O(nk)$ 的空间。
+
+# 解法二
+
+## 思路和算法
+
+根据字母异位词的定义，两个互为字母异位词的字符串包含的字符完全相同，只有顺序可能不同，因此两个互为字母异位词的字符串中，相同字符的出现次数相同。
+
+可以将每个字符的出现次数作为同一组字母异位词的标志，使用哈希表存储每个标志对应的所有字符串，将同一组字母异位词的标志作为哈希表的关键字。
+
+由于每个字符串只包含小写字母，因此可以使用长度为 $26$ 的数组记录每个字符的出现次数，将该数组转成字符串作为哈希表的关键字。
+
+## 代码
+
+* [sol2-Java]
+
+```Java
+class Solution {
+    public List<List<String>> groupAnagrams(String[] strs) {
+        Map<String, List<String>> map = new HashMap<String, List<String>>();
+        for (String str : strs) {
+            int[] counts = new int[26];
+            int length = str.length();
+            for (int i = 0; i < length; i++) {
+                counts[str.charAt(i) - 'a']++;
+            }
+            String key = Arrays.toString(counts);
+            map.putIfAbsent(key, new ArrayList<String>());
+            map.get(key).add(str);
+        }
+        return new ArrayList<List<String>>(map.values());
+    }
+}
+```
+
+* [sol2-C#]
+
+```C#
+public class Solution {
+    public IList<IList<string>> GroupAnagrams(string[] strs) {
+        IDictionary<string, IList<string>> dictionary = new Dictionary<string, IList<string>>();
+        foreach (string str in strs) {
+            int[] counts = new int[26];
+            foreach (char c in str) {
+                counts[c - 'a']++;
+            }
+            string key = string.Join(",", counts);
+            dictionary.TryAdd(key, new List<string>());
+            dictionary[key].Add(str);
+        }
+        return new List<IList<string>>(dictionary.Values);
+    }
+}
+```
+
+## 复杂度分析
+
+- 时间复杂度：$O(n(k + |\Sigma|))$，其中 $n$ 是数组 $\textit{strs}$ 的长度，$k$ 是数组 $\textit{strs}$ 中的字符串的最大长度，$\Sigma$ 是字符集，这道题中字符集为全部小写英语字母，$|\Sigma| = 26$。需要遍历 $n$ 个字符串，对于每个字符串，统计每个字符的出现次数需要 $O(k)$ 的时间，更新哈希表需要 $O(|\Sigma|)$ 的时间，总时间复杂度是 $O(n(k + |\Sigma|))$。
+
+- 空间复杂度：$O(n(k + |\Sigma|))$，其中 $n$ 是数组 $\textit{strs}$ 的长度，$k$ 是数组 $\textit{strs}$ 中的字符串的最大长度，$\Sigma$ 是字符集，这道题中字符集为全部小写英语字母，$|\Sigma| = 26$。哈希表需要存储数组 $\textit{strs}$ 中的全部字符串以及每组字母异位词的关键字，需要 $O(n(k + |\Sigma|))$ 的空间。
+

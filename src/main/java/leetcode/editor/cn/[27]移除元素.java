@@ -1,7 +1,7 @@
 package leetcode.editor.cn;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution11 {
     public int removeElement(int[] nums, int val) {
         int slow = 0, fast = 0;
         while (fast < nums.length){
